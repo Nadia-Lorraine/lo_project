@@ -1,0 +1,75 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+/*general styles*/
+body{
+    font-family: 'PT Sans', sans-serif;
+    line-height:30px;
+	font-size:20px;
+    color:lightblue;
+    
+}
+img{
+    max-width:100%;
+}
+ h1, h2{
+     margin-bottom: 30px;
+     text-align:center;
+ }
+ header nav a{
+     font-size:30px;
+     text-align:right;
+     text-decoration:none;
+     color:indianred;
+     margin-top: 30px;
+ }
+ header nav a:hover{
+     color:lightslategray;
+ }
+header{
+    background-image:url("../images/blackbackground.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;    
+    height:90vh;
+}
+
+img.logo{
+    width:50%;
+    margin: 30px;
+}    
+#About {
+    background-color:black;
+    padding:60px; 
+}
+#Assistance{
+   /* background-color:black;*/
+   background-image: url("../images/assistance.jpg");
+    padding:60px;
+    height:90vh;
+}
+#Subscribe{
+    background-image:url("../images/subscribe.jpg");
+    padding:60px;
+    align-content: center;
+}
+#Subscribe form button{
+    background-color:lightblue;
+
+}
+#Subscribe form button:hover{
+    background-color: indianred;
+}
+#Contact{
+    background-color:black;
+    padding:40px;
+    text-align:center;
+} 
+#Contact nav a{
+    color:lightblue;
+}
+#Contact nav a:hover{
+    color:indianred;
+}
+
