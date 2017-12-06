@@ -10,15 +10,43 @@
     </head>
      <body>
       <header>
-        <nav class="grid-spaceBetween">
+        <!-- Mobile Nav Starts Here-->
+        <div id="container" class="mob-show grid">
+
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>    
+      </a>
+      <a class="col-12 center" href="#Home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#About" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#Assistance" class="toggle-mobile-menu">Assistance</a>
+      <a class="col-12 center" href="#Blog" class="toggle-mobile-menu">Blog</a>
+      <a class="col-12 center" href="#Subscribe" class="toggle-mobile-menu">Subscribe</a>
+      <a class="col-12 center" href="#Contact" class="toggle-mobile-menu">Contact</a>
+  </nav>
+  
+</div> <!-- #container -->
+        <!--mobile Nav Ends Here -->
+        <nav class="grid-spaceBetween mob-hide">
          <div class="col-5">
            <img src="images/LO.png" alt="my logo" class="logo"/>
          </div>
          <div class="navlinks">
+             <a class="col-1" href ="#Home"> Home </a>
              <a class="col-1" href ="#About"> About </a>
              <a class="col-1" href ="#Assistance"> Assistance </a>
-             <a class="col-1" href ="#Blog"> Blog </a>
-             <a class="col-1" href ="#Subscribe"> Subscribe  </a>
+             <a class="col-1" href ="https://livethisisnotarehearsal.wordpress.com/">Blog</a>
+             <a class="col-1" href ="#Subscribe"> Subscribe </a>
              <a class="col-1" href ="#Contact"> Contact <a>
           </div>
         </nav>

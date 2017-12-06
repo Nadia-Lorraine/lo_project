@@ -10,15 +10,43 @@
     </head>
      <body>
       <header>
-        <nav class="grid-spaceBetween">
+        <!-- Mobile Nav Starts Here-->
+        <div id="container" class="mob-show grid">
+
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>    
+      </a>
+      <a class="col-12 center" href="#Home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#About" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#Assistance" class="toggle-mobile-menu">Assistance</a>
+      <a class="col-12 center" href="#Blog" class="toggle-mobile-menu">Blog</a>
+      <a class="col-12 center" href="#Subscribe" class="toggle-mobile-menu">Subscribe</a>
+      <a class="col-12 center" href="#Contact" class="toggle-mobile-menu">Contact</a>
+  </nav>
+  
+</div> <!-- #container -->
+        <!--mobile Nav Ends Here -->
+        <nav class="grid-spaceBetween mob-hide">
          <div class="col-5">
            <img src="images/LO.png" alt="my logo" class="logo"/>
          </div>
          <div class="navlinks">
+             <a class="col-1" href ="#Home"> Home </a>
              <a class="col-1" href ="#About"> About </a>
              <a class="col-1" href ="#Assistance"> Assistance </a>
-             <a class="col-1" href ="#Blog"> Blog </a>
-             <a class="col-1" href ="#Subscribe"> Subscribe  </a>
+             <a class="col-1" href ="https://livethisisnotarehearsal.wordpress.com/">Blog</a>
+             <a class="col-1" href ="#Subscribe"> Subscribe </a>
              <a class="col-1" href ="#Contact"> Contact <a>
           </div>
         </nav>
@@ -31,33 +59,33 @@
         </header>
       
         <section id="About">
-         <h2> About me </h2> 
+         <h2> About Me </h2> 
          <div class="grid-spaceAround">
-         <div class="col-3">
+         <div class="col-3" >
            <img src="images/lorraine.jpg" alt="me" class="lorraine"/>
            </div>
          <div class="col-6" >
-            <p> So in love with life, I seek to make it a little bit brighter, each day and try to help others brighten theirs too.
-            </br>Through this whole life journey, I learn a lot from the places I visit, the books I read, the mistakes I make, the classes I attend, the people I meet and everything else in my life. Therefore, I apply the lessons to embellish my work and color the world around me.</br>
-            For my love of life and literature, I read so much and write. I am also, interested in business information techology and pshychology.</br> I should confess that, It's not quite easy getting to fully describe myself. so if there's any piece of information you want to know about me that isn't mentioned here, don't esitate to contact me and follow me on my social media accounts linked at the bottom of this page.</p>
+            <p> So in love with life, I seek to make life a little bit brighter each day and try to help others brighten theirs too.
+            </br>Through this whole life journey, I  learn a lot from the places I visit, the books I read, the mistakes I make, the classes I attend, the people I meet and everything else in my life. I apply these lessons to embellish my work and color the world around me.</br>
+            My love of life and literature inspires me to read and write; I also have interest in business information techology and pshychology.</br>I should confess that it is not easy to fully describe myself, so if you would like to know more about me, please do not hesitate to contact me and follow me on my social media accounts linked at the bottom of this page.</p>
           </div>
           </div>
         </section><!-- the end of the about section-->
         <section id="Assistance" class="grid-spaceAround">
            <h2 class="col-12"> For the following services, </br> contact me. </h2>
            <div class="col-3">
-             <h3> Enhancing your business: </h3>
-             <ul> <li>designing and developing a static website for your business</li>
-             <li>business consultation</li> </ul>
+             <h3> Enhancing Your Business: </h3>
+             <ul> <li>Designing and Developing a static website for your business</li>
+             <li>Business Consultation</li> </ul>
              </div>
             <div class="col-3">
               <h3>Writing:</h3>
-              <ul> <li>Articles for your magazine</li>
-              <li>Document translation</br>(English,French,Kinyarwanda)</li> </ul>
+              <ul> <li>Articles for your Magazine</li>
+              <li>Document Translation</br>(English,French,Kinyarwanda)</li> </ul>
               </div>
            </section><!-- the end of the assistance section -->
            <section id="Subscribe">
-             <h2> Subscribe for newsletter. </h2>
+             <h2> Subscribe for Newsletter. </h2>
              <form class="grid-center" method="POST" action="http://formspree.io/n.lorraine.nl@gmail.com">
                 <label class="col-7">Your Name</label>
                 <input type="name" name="name" class="col-7"/>

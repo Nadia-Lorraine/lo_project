@@ -2,6 +2,7 @@
 	box-sizing:border-box;
 	padding:0;
 	margin:0;
+    max-width:100%;
 }
 /*general styles*/
 body{
@@ -17,11 +18,54 @@ img{
  h1, h2, h3{
      margin-bottom: 30px;
      text-align:center;
+     text-transform:capitalize;
  }
  h3{
      color:indianred;
      text-align:center;
  }
+/*Mobile Nav styles */
+    /* MOBILE NAV */
+#mobile-navigation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.96);
+}
+#container.mobile-menu-visible #mobile-navigation{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* HELPERS */
+.padding{
+  padding: 40px;
+}
+.margin-top-bottom{
+  margin: 40px 0;
+}
+.round-corners{
+  border-radius: 4px;
+}
+.bg-yellow{
+  background-color:lightblue;
+}
+.center{
+  text-align: center;
+}
+.animate{
+  transition: all 172ms ease-out;
+}
+.mob-show{
+    display:none !important;
+}
+/*mobile Nav Styes end*/
  header nav a{
      font-size:30px;
      text-align:right;
@@ -65,6 +109,9 @@ img .lorraine{
     padding:60px;
     align-content: center;
 }
+label{
+    text-align:center;
+}
 #Subscribe form button{
     background-color:lightblue;
     margin-top:1%;
@@ -84,25 +131,41 @@ img .lorraine{
     color:indianred;
 }
 /*making my website responsive*/
-/*@media all and (max-width:576px){
-    body{
-        width:
+@media all and (max-width:940px){
+    .mob-show{
+        display:block !important;
+    }
+    .mob-hide{
+        display:none !important;
     }
 }
+
 @media all and (max-width:768px){
     body{
-         width:
-    }    
-}
-    @media all and (max-width:1024px){
-    body{
+         font-size:15px;
+         line-height:20px;
+    }   
+header nav a{
+     font-size:20px;
+     padding-top:1px;
+     margin:15px;
+ }
+ nav .logo{
+     width:35%;
+     margin:10px;
 
+ }
+ header{   
+    height:75vh;
+}
+#Assistance{
+    height:150vh;
+}
+}
+@media all and (max-width:390px){
+    #Subscribe{
+        color:crimson;
     }
 }
-    @media all and (max-width:1280px){
-    body{
-
-    }
-}*/
 
 

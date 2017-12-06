@@ -1,3 +1,24 @@
+$(document).ready(function(){
+  console.log('working');
+  // responsive navigation
+function changeBodyClass(event) {
+  
+  // Log 
+  console.log('Clicked on toggle menu class');
+    
+  // Prevent default event (clicking a link)
+  event.preventDefault();
+  
+  // Toggle body class
+  $('#container').toggleClass('mobile-menu-visible');
+  
+}
+
+/*
+**  Bind events
+*/
+$('a').on('click', changeBodyClass);
+//smooth scroll
 function scrollToSection(event) {
   
   // Log 
@@ -28,3 +49,5 @@ function scrollToSection(event) {
 **  Bind events
 */
 $('a').on('click', scrollToSection);
+
+});//This closes the JQuery function- all JQuery comes before this
