@@ -6,8 +6,7 @@ function changeBodyClass(event) {
   // Log 
   console.log('Clicked on toggle menu class');
     
-  // Prevent default event (clicking a link)
-  event.preventDefault();
+  
   
   // Toggle body class
   $('#container').toggleClass('mobile-menu-visible');
